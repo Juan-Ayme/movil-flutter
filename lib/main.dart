@@ -6,16 +6,18 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      debugShowCheckedModeBanner: false,
+    return MaterialApp(
+      debugShowCheckedModeBanner:
+          false, //lina para que desaparesca la marca de desarrollo
       theme: ThemeData(
         useMaterial3: true,
-        colorSchemeSeed: Colors.tealAccent
-        ),
+        colorSchemeSeed: Colors.tealAccent,
+      ),
       home: const CounterScreen(),
     );
   }
